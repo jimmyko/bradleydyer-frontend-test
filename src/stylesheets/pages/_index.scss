@@ -1,0 +1,198 @@
+.stage-slogan {
+    font-size: 3.5em;
+    font-family: $font-heading;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    .highlight {
+        color: $primary-color;
+    }
+}
+
+h2 {
+    font-family: $font-heading;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #ffffff;
+    line-height: 1.5em;
+}
+
+.text-highlight {
+    color: $primary-color;
+}
+
+.text-normal {
+    color: $secondary-color;
+    font-size: 1.7em;
+}
+
+h2+p {
+    margin-top: 6rem;
+}
+
+.launch__title {
+    width: 500px;
+    padding: .3em .6em;
+    border: 3px solid $primary-color;
+    display: inline-block;
+}
+
+.section--registration {
+    overflow: hidden;
+
+    .left, .right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 49.98%;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        right: 0;
+    }
+
+    .registration__image {
+        background-image: url(../images/contact-image.jpg);
+        background-size: cover;
+        background-position: left right;
+        background-repeat: no-repeat;
+    }
+
+    .registration__content {
+        background-color: #f3f0ec;
+    }
+
+    .registration__form {
+
+        .inner {
+            display: table;
+            width: 100%;
+        }
+
+        .form-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+
+    .registration__header {
+        background-image: url(../images/contact-bg.jpg);
+        background-repeat: repeat;
+        background-position: top;
+        background-size: 100% auto;
+        display: table;
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+
+        .inner {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
+.registration {
+    height: 70vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+}
+
+.down {
+    display: inline-block;
+    font-family: $font-heading;
+    text-transform: uppercase;
+    border: 3px solid $primary-color;
+    color: $primary-color;
+    font-size: 1.4em;
+    padding: .3em .6em;
+}
+
+.news {
+    background-image: url(../images/common/news-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vh 5vw;
+    height: 70vh;
+
+    .vsplit {
+        width: 49.98%;
+        height: 100%;
+
+        >.inner {
+            width: 100%;
+            height: 100%
+        }
+    }
+
+    .hsplit {
+        height: 49.98%;
+        width: 100%;
+
+        >.inner {
+            width: 100%;
+            height: 100%
+        }
+    }
+
+    >.left {
+        background-image: url(../images/common/the-bard.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: left;
+    }
+
+    >.right {
+        padding-left: 30px;
+        float: right;
+
+        >.top {
+            height: 49.98%;
+            padding-bottom: 15px;
+
+            .inner {
+                background-color: #000000;
+                width: 100%;
+                height: 100%
+            }
+        }
+
+        >.bottom {
+            padding-top: 15px;
+
+            >.left {
+                padding-right: 15px;
+                float: left;
+
+                >.inner {
+                    background-color: #7c705d;
+                }
+            }
+
+            >.right {
+                padding-left: 15px;
+                float: right;
+
+                >.inner {
+                    background-image: url(../images/common/filler.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

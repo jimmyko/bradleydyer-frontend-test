@@ -1,0 +1,172 @@
+#header
+
+  %img.logo{:src => "./images/common/galliard-logo.png"}
+
+#content.sections
+
+  %section.section.section--welcome{:data => {:anchor => "welcome"}}
+
+    .inner
+
+      %a.sr-only Welcome
+
+      .container--stage-logo
+
+        %img.stage-logo.center-block{:src => "./images/common/the-stage-logo.png", :width => 243, :height => 412}
+
+      .container--flip
+        .flip.center-block.text-center
+          .flip__card-wrapper
+            .flip__card.work Work
+            .flip__card.play Play
+            .flip__card.live Live
+
+  %section.section.section--slogan{:data => {:anchor => "slogan"}}
+
+    .inner
+
+      %a.sr-only Slogan
+
+      .container--stage-slogan.text-center
+
+        %p.stage-slogan
+          an
+          <br><span class="highlight">outstanding
+          <br>new mixed-use
+          <br>development</span>
+          <br>with a
+          <br>shakespearean
+          <br>twist
+
+      .footer.text-center
+
+        %span.down Scroll down
+
+  %section.section.section--launch{:data => {:anchor => "launch"}}
+
+    .inner
+
+      %a.sr-only Launch
+
+      .container--launch.text-center
+        .launch
+          %h2.launch__title.text-highlight Launching October 2015
+          %p.launch__description.text-normal
+            The Stage will comprise a 40-storey residential tower
+            <br>and over 250,000 sq. ft. of office, retail and leisure space, whilst also
+            <br>incorporating a world-class heritage center - Shakespeare's Curtain
+            <br>Theatre, providing a unique international identity for investors,
+            <br>residents and occupiers.
+
+  %section.section.section--news{:data => {:anchor => "news"}}
+
+    .inner
+
+      %a.sr-only News
+
+      .container--news
+        .news
+          .vsplit.left
+          .vsplit.right
+            .hsplit.top
+              .inner
+            .hsplit.bottom
+              .vsplit.left
+                .inner
+              .vsplit.right
+                .inner
+
+  %section.section.section--map{:data => {:anchor => "map"}}
+
+    .inner
+
+      %a.sr-only Map
+
+      .container--map
+      
+        .map.center-block
+          .map__control.zoom-out
+          .map__control.zoom-in
+
+  %section.section.section--registration{:data => {:anchor => "registration"}}
+
+    .inner
+
+      %a.sr-only Registration
+
+      .container--registration
+
+        .registration.text-center
+
+          .registration__image.left
+
+          .registration__content.right
+
+            .registration__header
+              .inner.text-center
+                %h2.registration__title Register for the latest on the stage
+
+            .registration__form
+              .inner
+                .form-wrapper
+                  %form.center-block
+                    .form-group
+                      %label.sr-only{:for => "first-name"} FirstName
+                      %input.form-control#first-name{:type => "text", :placeholder => "First Name"}
+                    .form-group
+                      %label.sr-only{:for => "last-name"} FirstName
+                      %input.form-control#last-name{:type => "text", :placeholder => "Last Name:"}
+                    .form-group
+                      %label.sr-only{:for => "email"} Email
+                      %input.form-control#email{:type => "email", :placeholder => "Email:"}
+                    .form-group
+                      %label.sr-only{:for => "country"} Email
+                      %select.form-control#country
+                        %option{:value => "", :disabled => true, :selected => true} Select your country:
+                        %option{:value => "GB"} United Kingdom
+                    .form-group
+                      %label.sr-only{:for => "interest"} Interest
+                      %select.form-control#interest
+                        %option{:value => "", :disabled => true, :selected => true} Interest type:
+                        %option{:value => "programming"} Programming
+
+  %section.section.section--contact{:data => {:anchor => "contact"}}
+
+    .inner
+
+      %a.sr-only Contact
+
+      .container.container--contact.text-center
+
+        .contact
+          %h2.contact__title
+            %span.text-highlight For enquires
+            <br>Please get in touch
+
+          %p.contact__description.text-normal
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit commodo pretium quis, sem. Nulla consequat massa quis enim.
+
+          .row
+            .col-xs-4
+              %h4.contact__subtitle.text-highlight Retail
+              %p.contact-tel.text-normal 020 XXXX XXXX
+
+            .col-xs-4
+              %h4.contact__subtitle.text-highlight Resdential
+              %p.contact-tel.text-normal 020 XXXX XXXX
+
+            .col-xs-4
+              %h4.contact__subtitle.text-highlight Offices
+              %p.contact-tel.text-normal 020 XXXX XXXX
+
+#backgrounds
+
+  .background.background-id-3
+
+    .background.background-id-2
+
+      .background.background-2-blur
+
+        .background.background-id-1
+
+          .background.background-id-1-blur

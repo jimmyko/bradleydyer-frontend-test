@@ -1,0 +1,32 @@
+#backgrounds {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -9999;
+    left: 0;
+    top: 0;
+
+    .background {
+        @include background-size(cover);
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-color: transparent;
+    }
+
+    .background-id-1-blur {
+        background-image: url('../images/bg-blur.jpg');
+    }
+
+    .background-id-1 {
+        background-image: url('../images/bg.jpg');
+    }
+
+    .background-id-2 {
+        background-image: url('../images/bg-2.jpg');
+    }
+
+    .background-id-3 {
+        background-image: url('../images/bg-3.jpg');
+    }
+}

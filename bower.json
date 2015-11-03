@@ -1,0 +1,13 @@
+{
+  "name": "bradleydyer-test",
+  "private": true,
+  "dependencies": {
+    "normalize-css": "~3.0.1",
+    "modernizr": "~2.8.2",
+    "jquery": "~1.11.1",
+    "scrollmagic": "~2.0.5",
+    "fullpage.js": "~2.7.4",
+    "bootstrap": "~3.3.5",
+    "gsap": "~1.18.0"
+  }
+}

@@ -1,0 +1,74 @@
+@include keyframes(flipping) {
+    0%, 100% {
+        width: 0;
+    }
+    33%, 66% {
+        width: 100%;
+    }
+}
+
+@include keyframes(card1) {
+    0% {
+        visibility: visible;
+    }
+    33% {
+        visibility: hidden;
+    }
+}
+
+@include keyframes(card2) {
+    0%, 66% {
+        visibility: hidden;
+    }
+    33% {
+        visibility: visible;
+    }
+}
+
+@include keyframes(card3) {
+    0% {
+        visibility: hidden;
+    }
+    66% {
+        visibility: visible;
+    }
+}
+
+$flip-animation-duration: 2s;
+
+.flip {
+    margin-top: 150px;
+    width: $card-width;
+
+    .flip__card-wrapper {
+        @include animation(flipping $flip-animation-duration ease-in-out infinite);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .flip__card {
+        background-color: $primary-color;
+        color: #ffffff;
+        font-family: $font-heading;
+        text-transform: uppercase;
+        font-size: 3.5em;
+        letter-spacing: .1em;
+        width: $card-width;
+
+        &.work {
+            @include animation(card1 $flip-animation-duration*3 steps(1) infinite);
+        }
+
+        &.play {
+            @include animation(card2 $flip-animation-duration*3 steps(1) infinite);
+            position: absolute;
+            top: 0;
+        }
+
+        &.live {
+            @include animation(card3 $flip-animation-duration*3 steps(1) infinite);
+            position: absolute;
+            top: 0;
+        }
+    }
+}
